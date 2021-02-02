@@ -32,26 +32,7 @@ cloneRepository("", "https://github.com/devonfw/jump-the-queue.git")
 
 [step]
 --
-buildJava("jump-the-queue/java/jtqj", true)
---
-
-Wait until you see the message "BUILD SUCCESS".
-
-[step]
---
-runServerJava("jump-the-queue/java/jtqj/server", { "startupTime": 40, "port": 8081, "path": "jumpthequeue" })
---
-
-[step]
---
 npmInstall("jump-the-queue/angular")
---
-
-The following two steps are only needed in this tutorial. Normally you can simply execute "ng serve", open the https://localhost:4200/ and start using the app.
-
-[step]
---
-changeFile("jump-the-queue/angular/src/environments/environment.ts", { "file": "placeholder.txt", "placeholder": " baseUrlRestServices: 'http://localhost:8081/jumpthequeue/services/rest'," })
 --
 
 [step]
