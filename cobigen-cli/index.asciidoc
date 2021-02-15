@@ -20,7 +20,7 @@ installCobiGen()
 --
 [step]
 --
-adaptCobiGenTemplates()
+adaptTemplatesCobiGen()
 --
 Now you are ready to create your first project
 [step]
