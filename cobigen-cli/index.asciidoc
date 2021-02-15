@@ -18,7 +18,10 @@ Now, you have to download cobigen
 --
 installCobiGen()
 --
-
+[step]
+--
+adaptCobiGenTemplates()
+--
 Now you are ready to create your first project
 [step]
 --
