@@ -14,7 +14,6 @@ You can find the documentation here:
 https://github.com/devonfw-forge/tutorial-compiler/wiki
 
 ====
-
 ====
 Let's start!
 
@@ -63,10 +62,6 @@ cloneRepository("", "https://github.com/devonfw-tutorials/tutorials.git")
 After this step you should have both repositories in the same folder next to each other.
 ====
 
-[step]
---
-npmInstall("", {"name": "typescript", "global": true})
---
 
 [step]
 --
@@ -94,4 +89,9 @@ Add the needed functions
 [step]
 --
 changeFile("tutorials/my-thai-star/index.asciidoc", {"file": "text/functions.txt", "placeholder": "This is the online demo of https://github.com/devonfw/my-thai-star" })
+--
+
+[step]
+--
+executeFile("tutorial-compiler/localBuildRun.sh")
 --
