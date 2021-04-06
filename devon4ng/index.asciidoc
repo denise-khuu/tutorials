@@ -3,10 +3,6 @@
 A tutorial
 ====
 [step]
---
-restoreDevonfwIde(["java","mvn"])
---
-[step]
 -- 
 restoreWorkspace({"workspace": "devon4ng"})
 --
@@ -14,9 +10,4 @@ restoreWorkspace({"workspace": "devon4ng"})
 --
 changeWorkspace("devonfw/workspaces/hello")
 --
-[step]
---
-createFolder("user")
---
-
 
