@@ -6,8 +6,5 @@ A tutorial
 -- 
 restoreWorkspace({"workspace": "devon4ng"})
 --
-[step]
---
-changeWorkspace("devonfw/workspaces/hello")
---
+
 
