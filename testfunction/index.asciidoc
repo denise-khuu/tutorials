@@ -12,5 +12,9 @@ restoreWorkspace({"workspace": "devon4ng"})
 --
 [step]
 --
+changeWorkspace("devonfw")
+--
+[step]
+--
 createFile("text.txt")
 --
