@@ -2,15 +2,44 @@
 ====
 Description
 ====
+
 [step]
+== Title 00
 --
-restoreDevonfwIde(["java","mvn"], "2020.08.001")
+nextKatacodaStep("StepTitle", [{"content": "hello 0"}])
 --
+
+text before 01
 [step]
+== Title 01
 --
-restoreWorkspace({"workspace": "devon4ng"})
+nextKatacodaStep("StepTitle", [{"content": "hello 1"}])
 --
+
+====
+text before 02
 [step]
+== Title 02
 --
-createFile("text.txt")
+nextKatacodaStep("StepTitle", [{"content": "hello 2"}])
 --
+====
+
+====
+text before 03
+[step]
+== Title 03
+--
+nextKatacodaStep("StepTitle", [{"content": "hello 3"}])
+--
+text after 03
+====
+
+====
+[step]
+== Title 04
+--
+nextKatacodaStep("StepTitle", [{"content": "hello 4"}])
+--
+text after 04
+====
