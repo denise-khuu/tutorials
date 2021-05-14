@@ -1,0 +1,12 @@
+{
+    "title": "Tutorial-Compiler Tutorials",
+    "description": "Learn everything about the tutorial-compiler",
+    "icon": "fa-katacoda",
+    "courses": 
+    [{
+        "course_id": "restore-workspace-tutorial-compiler",
+        "title": "Restore Workspace",
+        "description": "Katacoda Scenario Example"
+    }]
+
+}
