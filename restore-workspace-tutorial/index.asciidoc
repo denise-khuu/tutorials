@@ -1,0 +1,88 @@
+= Clone a repository into your tutorials 
+== Learn how to use restoreWorkspace inside your tutorials 
+====
+In this scenario, you will learn how to use the restoreWorkspace() function inside your tutorials.
+
+## Prerequisites
+* GitHub Account 
+* forked tutorials repository 
+
+This is the original 'tutorials' repository on GitHub:
+https://github.com/devonfw-tutorials/tutorials
+There should be a copy of this tutorial listed inside 'Your tutorials' 
+
+If you haven't setup the tutorials environment yet, you can follow this link to learn, how to create your first tutorial: 
+https://katacoda.com/devonfw/scenarios/create-your-own-tutorial.
+
+
+## Learning goals
+In this tutorial you will learn, how to: 
+* use 'restoreWorkspace'
+
+You can find the documentation of this function here:
+https://github.com/devonfw-tutorials/tutorials/wiki/Functions#restoreworkspace
+
+====
+[step]
+--
+addSetupScript("setup/setupTutorialsRepo.sh", "setup/setupTutorialsRepo.ps1")
+--
+
+We have already created a tutorial named 'my-first-workspace' for you.  
+In this tutorial you will only learn how to add a workspace to the tutorial. 
+If you want to know how to create a tutorial go to: 
+https://katacoda.com/devonfw/scenarios/create-your-own-tutorial.
+
+
+RestoreWorkspace is the function to clone a repository in the background at the beginning of a tutorial. 
+First of all you need to find the workspace repository, that you intended to clone, on GitHub.
+If you need a custom workspace, you can ask the owners of devonfw-tutorials to setup one for you.
+You will find them, here: 
+https://github.com/orgs/devonfw-tutorials/people
+
+In our tutorial will work with the workspace-test repository. 
+
+https://github.com/devonfw-tutorials/workspace-test.git
+
+Fork the repository by clicking on the 'Fork' button.
+This will create a copy of the repository in your own GitHub account. You will find it in 'Your repositories'.
+
+[step]
+== Fork and clone the workspace-test repository
+--
+nextKatacodaStep("Fork the workspace-repository", [{"image": "images/fork.jpg"}, {"content": "\nNow you can run your tutorial and add your username and the right branch to the command.\n"}])
+nextKatacodaStep("Clone the workspace-repository", [ {"content": "\nOpen the forked repository in your GitHub account and copy the repository URL as shown in image below.\n"}, {"image": "images/clone_code.jpg"}, {"file": "files/clone-repository.md"}])
+cloneRepository("", "https://github.com/devonfw-tutorials/workspace-test.git")
+--
+
+[step]
+--
+nextKatacodaStep("Create a new branch", [{ "file": "files/createNewBranch.md" }])
+--
+
+====
+Let's add content to the workspace.
+[step]
+== Add content of your workspace
+--
+createFile("workspace-test/my-first-file.txt", "files/my-first-file.txt")
+--
+====
+
+[step]
+== Push your changes to the workspace repository
+--
+nextKatacodaStep("Push workspace", [{ "file": "files/pushTutorial.md" }])
+--
+
+[step]
+== Add restoreWorkspace to the tutorial 
+--
+changeFile("tutorials/my-first-workspace/index.asciidoc", {"file" :"files/restoreWorkspace.asciidoc", "placeholder": "----"})
+--
+
+[step]
+== Push your tutorial
+--
+nextKatacodaStep("Push workspace", [{ "file": "files/pushTutorial.md" }])
+--
