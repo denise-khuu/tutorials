@@ -4,13 +4,13 @@ Description
 ====
 [step]
 --
-restoreDevonfwIde(["java","mvn"], "2020.08.001")
+createFile("folder1/folder2/text.txt")
 --
 [step]
 --
-restoreWorkspace({"workspace": "devon4ng"})
+openFile("folder1/folder2/text.txt")
 --
 [step]
 --
-createFile("text.txt")
+changeFile("folder1/folder2/text.txt", {"content": "Hello"})
 --
