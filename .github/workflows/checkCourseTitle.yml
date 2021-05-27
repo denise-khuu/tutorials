@@ -14,8 +14,6 @@ jobs:
     steps: 
       - name: Checkout playbooks
         uses: actions/checkout@v2 
-        with: 
-          repository: devonfw-tutorials/tutorials 
 
       - id: changedfiles
         uses: jitterbit/get-changed-files@v1
